@@ -1,0 +1,14 @@
+.about {
+  min-height: 100vh;
+}
+
+.follow {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.follow:hover {
+  color: #f54e30;
+}
+.follow-links a {
+  color: #000;
+}
