@@ -55,7 +55,7 @@ const skillset = [
 
 const Skills = () => {
     return (
-        <div className="skills">
+        <div className="skills-section" id="skills">
             <Container>
                 <div>
                     <h1 className="mx-auto my-5 pt-3 text-center">Skills</h1>

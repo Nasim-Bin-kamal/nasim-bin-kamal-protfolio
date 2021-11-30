@@ -18,14 +18,14 @@ const Contact = () => {
 
     }
     return (
-        <div className="contact-section">
+        <div className="contact-section" id="contact">
             <Container>
-                <h1 className="mx-auto text-center mb-5">Contact</h1>
+                <h1 className="mx-auto text-center pt-5">Contact</h1>
                 <div className="mx-auto mb-5">
-                    <Row xs={1} md={1} lg={2} className="d-flex justify-content-center align-items-center">
+                    <Row xs={1} md={1} lg={2} className="mx-auto d-flex justify-content-center align-items-center">
                         <Col>
-                            <div className="mx-auto d-flex justify-content-center align-items-center">
-                                <img className="mx-auto img-fluid" src="https://i.ibb.co/7yQKLg3/103967-OM0-NLW-209-ai-3.png" alt="" width="80%" />
+                            <div className="mx-auto p-2 d-flex justify-content-center align-items-center">
+                                <img className="mx-auto img-fluid" src="https://i.ibb.co/w66w775/email-marketing-abstract-concept-vector-illustration-email-newsletter-service-personalized-message-c.jpg" alt="" />
                             </div>
                         </Col>
                         <Col>
