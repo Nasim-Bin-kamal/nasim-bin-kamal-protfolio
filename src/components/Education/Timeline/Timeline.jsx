@@ -1,15 +1,16 @@
 import timelineElements from "./timelineElements";
-import "./Timeline.css";
-
 import {
     VerticalTimeline,
-    VerticalTimelineElement,
+    VerticalTimelineElement
 } from "react-vertical-timeline-component";
 
 import "react-vertical-timeline-component/style.min.css";
 import { Container } from "react-bootstrap";
+import "./Timeline.css";
+
 
 const Timeline = () => {
+
     let eduIconStyles = { background: "#ff7b42" };
 
     return (
@@ -18,9 +19,9 @@ const Timeline = () => {
                 <h1 className="mx-auto text-center mt-5 py-5">Education</h1>
                 <VerticalTimeline>
                     {timelineElements.map((element) => {
-
                         return (
                             <VerticalTimelineElement
+
                                 key={element?.id}
                                 date={element?.date}
                                 dateClassName="date"

@@ -1,20 +1,27 @@
-import React from 'react';
+import AOS from 'aos';
+import React, { useEffect } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { FaLinkedinIn, FaInstagram, FaTwitter, FaFacebook, FaGithub } from "react-icons/fa";
 import './About.css';
 
 const About = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000
+        });
+
+    }, []);
     return (
         <div className="about-section" id="about">
             <Container>
                 <h1 className="mx-auto text-center pt-5">About</h1>
                 <Row xs={1} md={1} lg={2} className="mx-auto pt-5 pb-3">
                     <Col>
-                        <div className="mx-auto p-3">
+                        <div className="mx-auto p-3" data-aos="zoom-in-up">
                             <img className="mx-auto  my-image rounded-3 img-fluid" src="https://i.ibb.co/N7QyFwp/DSC-0079-Copy-2.jpg" alt="" />
                         </div>
                     </Col>
-                    <Col>
+                    <Col data-aos="fade-left">
                         <div className="mx-auto mt-3">
                             <h2 className="fw-bold">Nasim Bin Kamal</h2>
                             <h5>Web Developer based in <span>Bangladesh</span></h5>

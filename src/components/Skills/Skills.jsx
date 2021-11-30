@@ -1,4 +1,5 @@
-import React from 'react';
+import AOS from 'aos';
+import React, { useEffect } from 'react';
 import { Col, Container, ProgressBar, Row } from 'react-bootstrap';
 import './Skills.css';
 
@@ -54,6 +55,11 @@ const skillset = [
 ]
 
 const Skills = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+        });
+    }, []);
     return (
         <div className="skills-section" id="skills">
             <Container>
@@ -61,7 +67,7 @@ const Skills = () => {
                     <h1 className="mx-auto my-5 pt-3 text-center">Skills</h1>
                 </div>
                 <Row xs={1} md={1} lg={2} className="my-5 mx-auto">
-                    <Col>
+                    <Col data-aos="fade-right">
                         {
                             skillset.slice(0, skillset.length / 2).map((skill, i) => <div key={i} className="mx-auto p-3">
                                 <h6>{skill?.skillName}</h6>
@@ -69,7 +75,7 @@ const Skills = () => {
                             </div>)
                         }
                     </Col>
-                    <Col>
+                    <Col data-aos="fade-left">
                         {
                             skillset.slice(skillset.length / 2, skillset.length).map((skill, i) => <div key={i} className="mx-auto p-3">
                                 <h6>{skill?.skillName}</h6>

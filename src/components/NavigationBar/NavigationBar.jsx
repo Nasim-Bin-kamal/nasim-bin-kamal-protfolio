@@ -18,6 +18,7 @@ const NavigationBar = () => {
                         <Nav className="me-auto">
                             <NavLink className="mx-2 text-decoration-none text-white fs-5" href="#home">Home</NavLink>
                             <NavLink className="mx-2 text-decoration-none text-white fs-5" href="#about">About</NavLink>
+                            <NavLink className="mx-2 text-decoration-none text-white fs-5" href="#education">Education</NavLink>
                             <NavLink className="mx-2 text-decoration-none text-white fs-5" href="#skills">Skills</NavLink>
                             <NavLink className="mx-2 text-decoration-none text-white fs-5" href="#projects">Projects</NavLink>
                             <NavLink className="mx-2 text-decoration-none text-white fs-5" href="#contact">Contact</NavLink>

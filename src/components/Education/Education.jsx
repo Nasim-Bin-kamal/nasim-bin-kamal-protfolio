@@ -3,7 +3,7 @@ import Timeline from './Timeline/Timeline';
 
 const Education = () => {
     return (
-        <div>
+        <div id="education">
             <Timeline />
         </div>
     );
