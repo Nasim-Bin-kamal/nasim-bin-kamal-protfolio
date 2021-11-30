@@ -8,10 +8,10 @@ const About = () => {
         <div className="about">
             <Container>
                 <h1 className="mx-auto text-center pt-5">About</h1>
-                <Row xs={1} md={2} lg={2} className="mx-auto pt-5 pb-3">
+                <Row xs={1} md={1} lg={2} className="mx-auto pt-5 pb-3">
                     <Col>
-                        <div className="mx-auto">
-                            <img className="mx-auto px-3 my-image rounded-3 img-fluid" src="https://i.ibb.co/N7QyFwp/DSC-0079-Copy-2.jpg" alt="" />
+                        <div className="mx-auto p-3">
+                            <img className="mx-auto  my-image rounded-3 img-fluid" src="https://i.ibb.co/N7QyFwp/DSC-0079-Copy-2.jpg" alt="" />
                         </div>
                     </Col>
                     <Col>

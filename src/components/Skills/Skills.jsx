@@ -58,7 +58,7 @@ const Skills = () => {
         <div className="skills">
             <Container>
                 <div>
-                    <h1 className="mx-auto my-5 text-center">Skills</h1>
+                    <h1 className="mx-auto my-5 pt-3 text-center">Skills</h1>
                 </div>
                 <Row xs={1} md={1} lg={2} className="my-5 mx-auto">
                     <Col>
