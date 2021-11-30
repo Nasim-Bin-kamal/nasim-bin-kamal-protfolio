@@ -1,3 +1,6 @@
 .navbarBg {
   background: linear-gradient(rgba(41, 45, 49, 0.863), rgba(41, 51, 59, 0.733));
 }
+.navbar-toggler {
+  background-color: rgb(52, 81, 100) !important;
+}

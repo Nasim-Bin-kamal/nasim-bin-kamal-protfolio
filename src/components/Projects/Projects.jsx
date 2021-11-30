@@ -1,9 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Card, Col, Container, Row, Button } from "react-bootstrap";
 import projectsdata from "./projectsData";
 import "./Projects.css";
+import { useNavigate } from "react-router-dom";
+import AOS from 'aos';
+
 
 const Projects = () => {
+
+    // const navigate = useNavigate();
+
+    useEffect(() => {
+        AOS.init({
+            duration: 2000
+        });
+
+    }, []);
+
+    const handleProjectDetails = (id) => {
+        // navigate(`/projects/${id}`);
+    }
     return (
         <div className="projects-section" id="projects">
             <Container>
@@ -11,22 +27,22 @@ const Projects = () => {
                     <h1 className="mx-auto text-center mb-5">Projects</h1>
                     <Row xs={1} md={2} lg={3}>
                         {
-                            projectsdata?.map((singleProject, idx) => <Col key={idx}>
+                            projectsdata?.map(singleProject => <Col key={singleProject?.id}>
                                 <div className="my-3 mx-auto">
-                                    <Card className="content rounded-3 bg-white">
+                                    <Card className="content rounded-3 bg-white" data-aos="fade-up">
                                         <div className="content-overlay"></div>
                                         <Card.Img className="content-image" variant="top" src={singleProject?.image[0]} widht="100%" height="200px" />
                                         <Card.Body>
-                                            <Card.Title className="fs-3">{singleProject?.projectName}</Card.Title>
-                                            <h5 className="py-1">{singleProject?.type}</h5>
+                                            <Card.Title className="fs-3 fw-bold">{singleProject?.projectName}</Card.Title>
+                                            <h5 className="py-1 text-secondary">{singleProject?.type}</h5>
                                         </Card.Body>
                                         <div className="content-details fadeIn-bottom">
-                                            {/* <h4 className="content-title text-white">{singleProject?.projectName}</h4> */}
-                                            <Button variant="outline-warning">View Details</Button>
+                                            {/* <h5 className="content-title text-white py-3">{singleProject?.projectName}</h5> */}
+                                            <Button onClick={() => handleProjectDetails(singleProject?.id)} variant="outline-warning">View Details</Button>
                                             <div className="mt-4">
-                                                <Button className="m-1" variant="outline-warning" size="sm">Live Site</Button>
-                                                <Button className="m-1" variant="outline-warning" size="sm">Client Site</Button>
-                                                <Button className="m-1" variant="outline-warning" size="sm">Server Site</Button>
+                                                <a href={singleProject?.liveSite} target="_blank" rel="noopener noreferrer"><Button className="m-1" variant="outline-warning" size="sm">Live Site</Button></a>
+                                                <a href={singleProject?.clientSite} target="_blank" rel="noopener noreferrer"><Button className="m-1" variant="outline-warning" size="sm">Client Site</Button></a>
+                                                <a href={singleProject?.serverSite} target="_blank" rel="noopener noreferrer"><Button className="m-1" variant="outline-warning" size="sm">Server Site</Button></a>
                                             </div>
                                         </div>
                                     </Card>

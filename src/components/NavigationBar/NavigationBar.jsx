@@ -13,7 +13,7 @@ const NavigationBar = () => {
                             <img src="https://i.ibb.co/dgtMkCQ/nbk2-removebg-preview.png" alt="" width="50%" />
                         </NavLink>
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ backgroundColor: '#dae2e273' }} />
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <NavLink className="mx-2 text-decoration-none text-white fs-5" href="#home">Home</NavLink>
