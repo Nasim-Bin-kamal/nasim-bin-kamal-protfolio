@@ -1,12 +1,14 @@
 import React, { useEffect } from "react";
 import { Card, Col, Container, Row, Button } from "react-bootstrap";
-import projectsdata from "./projectsData";
 import "./Projects.css";
 import { useNavigate } from "react-router-dom";
 import AOS from 'aos';
+import useProjects from "../../hooks/useProducts";
+
 
 
 const Projects = () => {
+    const [projects] = useProjects();
 
     const navigate = useNavigate();
 
@@ -25,13 +27,13 @@ const Projects = () => {
                     <h1 className="mx-auto text-center mb-5">Projects</h1>
                     <Row xs={1} md={2} lg={3}>
                         {
-                            projectsdata?.map(singleProject => <Col key={singleProject?.id}>
+                            projects?.map(singleProject => <Col key={singleProject?.id}>
                                 <div className="my-3 mx-auto">
                                     <Card className="content rounded-3 bg-white" data-aos="fade-up">
                                         <div className="content-overlay"></div>
-                                        <Card.Img className="content-image" variant="top" src={singleProject?.image[0]} widht="100%" height="200px" />
+                                        <Card.Img className="content-image" variant="top" src={singleProject?.images[0]} widht="100%" height="200px" />
                                         <Card.Body>
-                                            <Card.Title className="fs-3 fw-bold">{singleProject?.projectName}</Card.Title>
+                                            <Card.Title className="fs-3 fw-bold project-name">{singleProject?.projectName}</Card.Title>
                                             <h5 className="py-1 text-secondary">{singleProject?.type}</h5>
                                         </Card.Body>
                                         <div className="content-details fadeIn-bottom">
@@ -45,24 +47,10 @@ const Projects = () => {
                                         </div>
                                     </Card>
                                 </div>
+
                             </Col>)
                         }
                     </Row>
-                    {/* <Row xs={1} md={2} lg={3}>
-                        <Col>
-                            <div className="content">
-                                <div className="content-overlay"></div>
-                                <img
-                                    className="content-image"
-                                    src="https://i.imgur.com/7cNRozs.jpg"
-                                    alt=""
-                                />
-                                <div className="content-details fadeIn-bottom">
-                                    <h3 className="content-title">Geysers Valley Hotel</h3>
-                                </div>
-                            </div>
-                        </Col>
-                    </Row> */}
                 </div>
             </Container>
         </div>

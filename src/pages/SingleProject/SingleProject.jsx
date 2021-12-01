@@ -1,58 +1,68 @@
 import React from 'react';
-import { Carousel, Col, Container, Row } from 'react-bootstrap';
+import { Carousel, Col, Container, Row, Button } from 'react-bootstrap';
 import { useParams } from 'react-router';
+import NavigationBar from '../../components/NavigationBar/NavigationBar';
+import useProjects from '../../hooks/useProducts';
+import './SingleProject.css';
+import { FaLink, FaGithub } from "react-icons/fa";
 
 const SingleProject = () => {
     const { projectId } = useParams();
+    const [projects] = useProjects();
+
+    const singleProject = projects?.find(project => project.id === projectId) || {};
+    console.log(singleProject);
+    const { projectName, images, type, technologies, features, liveSite, clientSite, serverSite } = singleProject || {};
+
     return (
         <div>
+            <NavigationBar />
             <Container variant="dark">
-                <h1 className="mx-auto py-5 text-center fw-bold">Project Details</h1>
-                <Row xs={1} md={1} lg={2}>
-                    <Col xs={12} md={12} lg={7}>
-                        <Carousel className="border border-2 border-warning rounded-3">
-                            <Carousel.Item>
-                                <img
-                                    className="d-block w-100"
-                                    src="https://i.ibb.co/FVHRLSf/project11-1.png"
-                                    alt="First slide"
 
-
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <img
-                                    className="d-block w-100"
-                                    src="https://i.ibb.co/kQXyv7q/project11-2.png"
-                                    alt="Second slide"
-
-                                />
-                            </Carousel.Item>
-                            <Carousel.Item>
-                                <img
-                                    className="d-block w-100"
-                                    src="https://i.ibb.co/kySW33m/project11-3.png"
-                                    alt="Third slide"
-
-                                />
-                            </Carousel.Item>
-                        </Carousel>
+                <h1 className="mx-auto py-5 text-center fw-bold mt-4">Project Details</h1>
+                <Row xs={1} md={1} lg={2} >
+                    <Col xs={12} md={12} lg={7} >
+                        <div className="mb-5 mt-2">
+                            <Carousel className="border border-3  rounded-3">
+                                {
+                                    images?.map((image, img_id) => <Carousel.Item key={img_id}>
+                                        <img
+                                            className="d-block w-100"
+                                            src={image}
+                                            alt="slide"
+                                        />
+                                    </Carousel.Item>)
+                                }
+                            </Carousel>
+                            <div className="mt-4">
+                                <span className="fs-4">Explore:</span>
+                                <a href={liveSite} target="_blank" rel="noopener noreferrer"><Button className="m-1 fw-bold border-0" variant="warning" ><FaLink className="me-2 mb-1" />Live Site</Button></a>
+                                <a href={clientSite} target="_blank" rel="noopener noreferrer"><Button className="m-1 fw-bold border-0" variant="warning" ><FaGithub className="me-2 mb-1" />Client Site</Button></a>
+                                <a href={serverSite} target="_blank" rel="noopener noreferrer"><Button className="m-1 fw-bold border-0" variant="warning" ><FaGithub className="me-2 mb-1" />Server Site</Button></a>
+                            </div>
+                        </div>
                     </Col>
-                    <Col xs={12} md={12} lg={5}>
-                        <div>
-                            <h2>Name:Travel Time</h2>
-                            <h3>Description</h3>
-                            <h5>Full Stack Travel agency Website</h5>
-                            <h4>Features</h4>
+                    <Col xs={12} md={12} lg={5} >
+                        <div className="mb-5 mt-2">
+                            <h2>{projectName}</h2>
+                            <h5 className="text-secondary">{type}</h5>
+                            <h4>Features:</h4>
                             <ul>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, aliquam!</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, aliquam!</li>
-                                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, aliquam!</li>
+                                {
+                                    features?.map((feature, fea_id) => <li key={fea_id}>{feature}</li>)
+                                }
                             </ul>
-                            <h4>Tools & Technology</h4>
+                            <h4 className="py-2">Technologies:</h4>
+                            <div className="">
+                                {
+                                    technologies?.map((technology, tech_id) => <span key={tech_id} className="mx-1 my-1 py-1 px-2 text-white rounded-2 technology">{technology}</span>)
+                                }
+                            </div>
+
                         </div>
                     </Col>
                 </Row>
+
             </Container>
         </div>
     );

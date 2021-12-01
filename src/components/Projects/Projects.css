@@ -1,6 +1,9 @@
 .projects-section {
   background-color: whitesmoke;
 }
+.project-name {
+  color: coral;
+}
 
 .title {
   color: #1a1a1a;
@@ -84,12 +87,3 @@ img {
 .fadeIn-bottom {
   top: 80%;
 }
-
-/* .project-btn {
-  border-color: coral !important;
-  color: tomato;
-}
-.project-btn:hover {
-  background-color: tomato;
-  color: whitesmoke;
-} */

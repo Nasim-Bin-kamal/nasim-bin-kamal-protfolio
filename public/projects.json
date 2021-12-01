@@ -1,0 +1,82 @@
+[
+   {
+      "id": "0",
+      "projectName": "Two Wheels Zone",
+      "images": [
+         "https://i.ibb.co/jytkFf8/project1-1.png",
+         "https://i.ibb.co/f2FfQ1f/project1-3.png",
+         "https://i.ibb.co/RYWmBSz/project1-2.png"
+      ],
+      "type": "Full-Stack Bike Shop Website",
+      "technologies": [
+         "React",
+         "React Bootstrap",
+         "Node JS",
+         "Express JS",
+         "MongoDB",
+         "Firebase",
+         "Heroku"
+      ],
+      "features": [
+         "Developed a full-stack website for a motorcycle store based on React, React Bootstrap, Node.js, Express.js, MongoDB, Firebase, and Heroku.",
+         "Focused on user and admin authentication with firebase and verified by JWT token.",
+         "Users can order products, cancel and give a review also. Admin manages all of these processes and can make admin also."
+      ],
+      "description": "",
+      "liveSite": "https://two-wheels-zone-app.web.app/",
+      "clientSite": "https://github.com/Nasim-Bin-kamal/two-wheels-zone-website-client-site",
+      "serverSite": "https://github.com/Nasim-Bin-kamal/two-wheels-zone-website-server-site"
+   },
+   {
+      "id": "1",
+      "projectName": "Travel Time",
+      "images": [
+         "https://i.ibb.co/FVHRLSf/project11-1.png",
+         "https://i.ibb.co/kQXyv7q/project11-2.png",
+         "https://i.ibb.co/kySW33m/project11-3.png"
+      ],
+      "type": "Full-Stack Travel Agency Website",
+      "technologies": [
+         "React",
+         "React Bootstrap",
+         "Node JS",
+         "Express JS",
+         "MongoDB",
+         "Firebase",
+         "Heroku"
+      ],
+      "features": [
+         "Built this full-stack website by React with React Bootstrap. Server and database managed by Express.js and MongoDB and also used firebase authentication.",
+         "Users can book, cancel, and can see the booking status of booked packages.",
+         "Admin managed booked packages and can add and remove packages."
+      ],
+      "description": "",
+      "liveSite": "https://travel-time-application.web.app/",
+      "clientSite": "https://github.com/Nasim-Bin-kamal/travel-time-website-client-site",
+      "serverSite": "https://github.com/Nasim-Bin-kamal/travel-time-website-server-site"
+   },
+   {
+      "id": "2",
+      "projectName": "Medicare App",
+      "images": [
+         "https://i.ibb.co/GdcY36G/project10-1.png",
+         "https://i.ibb.co/BV3hrnW/project10-2.png",
+         "https://i.ibb.co/n8FMpcb/project10-3.png"
+      ],
+      "type": "Front-end Clinic Website",
+      "technologies": [
+         "React",
+         "React Bootstrap",
+         "Firebase"
+      ],
+      "features": [
+         "Built a medical clinic website based on React, React Bootstrap and, Node.js.",
+         "Focused on three types of firebase authentication for users’ login and registration.",
+         "Users can’t see the details page about any services and private routes if not logged in."
+      ],
+      "description": "",
+      "liveSite": "https://medicare-app-44af8.web.app/login",
+      "clientSite": "https://github.com/Nasim-Bin-kamal/medicare-clinic-website",
+      "serverSite": ""
+   }
+]

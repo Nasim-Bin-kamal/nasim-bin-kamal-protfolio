@@ -10,7 +10,7 @@ const NavigationBar = () => {
             <Navbar collapseOnSelect className="navbarBg p-0" variant=" dark" fixed="top" expand="lg">
                 <Container>
                     <Navbar.Brand className="nav-brand me-5">
-                        <NavLink href="#home">
+                        <NavLink href="/home">
                             <img src="https://i.ibb.co/dgtMkCQ/nbk2-removebg-preview.png" alt="" width="50%" />
                         </NavLink>
                     </Navbar.Brand>

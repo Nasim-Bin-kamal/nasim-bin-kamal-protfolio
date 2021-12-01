@@ -1,0 +1,13 @@
+.technology {
+  background-color: coral;
+  word-wrap: break-word;
+  display: inline-flex;
+}
+.project-btn {
+  border-color: coral !important;
+  color: tomato;
+}
+.project-btn:hover {
+  background-color: tomato;
+  color: whitesmoke;
+}

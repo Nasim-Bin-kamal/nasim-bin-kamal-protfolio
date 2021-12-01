@@ -1,8 +1,8 @@
 const projectsdata = [
     {
-        id: 0,
+        id: "0",
         projectName: "Two Wheels Zone",
-        image: [
+        images: [
             "https://i.ibb.co/jytkFf8/project1-1.png",
             "https://i.ibb.co/f2FfQ1f/project1-3.png",
             "https://i.ibb.co/RYWmBSz/project1-2.png"
@@ -10,7 +10,7 @@ const projectsdata = [
         ],
         type: "Full-Stack Bike Shop Website",
         technologies: [
-            "React", "React Bootstrap", "Node js", "Expressjs", "MongoDB", "Firebase", "Heroku"
+            "React", "React Bootstrap", "Node JS", "Express JS", "MongoDB", "Firebase", "Heroku"
         ],
         description: "",
         liveSite: "https://two-wheels-zone-app.web.app/",
@@ -19,9 +19,9 @@ const projectsdata = [
 
     },
     {
-        id: 1,
+        id: "1",
         projectName: "Travel Time",
-        image: [
+        images: [
             "https://i.ibb.co/FVHRLSf/project11-1.png",
             "https://i.ibb.co/kQXyv7q/project11-2.png",
             "https://i.ibb.co/kySW33m/project11-3.png"
@@ -38,16 +38,16 @@ const projectsdata = [
 
     },
     {
-        id: 2,
+        id: "2",
         projectName: "Medicare App",
-        image: [
+        images: [
             "https://i.ibb.co/GdcY36G/project10-1.png",
             "https://i.ibb.co/BV3hrnW/project10-2.png",
             "https://i.ibb.co/n8FMpcb/project10-3.png"
         ],
         type: "Front-end Clinic Website",
         technologies: [
-
+            "React", "React Bootstrap", "Firebase"
         ],
         description: "",
         liveSite: "https://medicare-app-44af8.web.app/login",
