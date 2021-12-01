@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Nav, Navbar, NavLink } from 'react-bootstrap';
+import { HashLink } from 'react-router-hash-link';
 import './NavigationBar.css';
 
 const NavigationBar = () => {
@@ -16,13 +17,14 @@ const NavigationBar = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <NavLink className="mx-2 text-decoration-none text-white fs-5" href="#home">Home</NavLink>
-                            <NavLink className="mx-2 text-decoration-none text-white fs-5" href="#about">About</NavLink>
-                            <NavLink className="mx-2 text-decoration-none text-white fs-5" href="#education">Education</NavLink>
-                            <NavLink className="mx-2 text-decoration-none text-white fs-5" href="#skills">Skills</NavLink>
-                            <NavLink className="mx-2 text-decoration-none text-white fs-5" href="#projects">Projects</NavLink>
-                            <NavLink className="mx-2 text-decoration-none text-white fs-5" href="#contact">Contact</NavLink>
-                            <NavLink className="mx-2 text-decoration-none text-white fs-5" to="/blogs">Blogs</NavLink>
+
+                            <HashLink className="mx-2 text-decoration-none text-white fs-5" to="/home#home">Home</HashLink>
+                            <HashLink className="mx-2 text-decoration-none text-white fs-5" to="/home#about">About</HashLink>
+                            <HashLink className="mx-2 text-decoration-none text-white fs-5" to="/home#education">Education</HashLink>
+                            <HashLink className="mx-2 text-decoration-none text-white fs-5" to="/home#skills">Skills</HashLink>
+                            <HashLink className="mx-2 text-decoration-none text-white fs-5" to="/home#projects">Projects</HashLink>
+                            <HashLink className="mx-2 text-decoration-none text-white fs-5" to="/home#contact">Contact</HashLink>
+                            <HashLink className="mx-2 text-decoration-none text-white fs-5" to="/blogs">Blogs</HashLink>
 
                         </Nav>
 
