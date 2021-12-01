@@ -69,15 +69,15 @@ const Skills = () => {
                 <Row xs={1} md={1} lg={2} className="my-5 mx-auto">
                     <Col data-aos="fade-right">
                         {
-                            skillset.slice(0, skillset.length / 2).map((skill, i) => <div key={i} className="mx-auto p-3">
+                            skillset.slice(0, skillset.length / 2).map((skill, i) => <div key={i} className="mx-auto p-3" data-aos="flip-up">
                                 <h6>{skill?.skillName}</h6>
                                 <ProgressBar className="skill-progress" animated now={skill?.percentage} label={`${skill?.percentage}%`} />
                             </div>)
                         }
                     </Col>
-                    <Col data-aos="fade-left">
+                    <Col data-aos="fade-right">
                         {
-                            skillset.slice(skillset.length / 2, skillset.length).map((skill, i) => <div key={i} className="mx-auto p-3">
+                            skillset.slice(skillset.length / 2, skillset.length).map((skill, i) => <div key={i} className="mx-auto p-3" data-aos="flip-up">
                                 <h6>{skill?.skillName}</h6>
                                 <ProgressBar className="skill-progress" animated now={skill?.percentage} label={`${skill?.percentage}%`} />
                             </div>)

@@ -22,7 +22,7 @@ const NavigationBar = () => {
                             <NavLink className="mx-2 text-decoration-none text-white fs-5" href="#skills">Skills</NavLink>
                             <NavLink className="mx-2 text-decoration-none text-white fs-5" href="#projects">Projects</NavLink>
                             <NavLink className="mx-2 text-decoration-none text-white fs-5" href="#contact">Contact</NavLink>
-                            <NavLink className="mx-2 text-decoration-none text-white fs-5" href="#blogs">Blogs</NavLink>
+                            <NavLink className="mx-2 text-decoration-none text-white fs-5" to="/blogs">Blogs</NavLink>
 
                         </Nav>
 

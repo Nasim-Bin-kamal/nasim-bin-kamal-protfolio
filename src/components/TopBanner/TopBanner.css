@@ -22,7 +22,7 @@
 }
 .desc {
   color: rgb(234, 235, 236);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 768px) {

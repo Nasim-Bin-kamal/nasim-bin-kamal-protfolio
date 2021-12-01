@@ -15,7 +15,7 @@ const About = () => {
         <div className="about-section" id="about">
             <Container>
                 <h1 className="mx-auto text-center pt-5">About</h1>
-                <Row xs={1} md={1} lg={2} className="mx-auto pt-5 pb-3">
+                <Row xs={1} md={1} lg={2} className="mx-auto py-5">
                     <Col>
                         <div className="mx-auto p-3" data-aos="zoom-in-up">
                             <img className="mx-auto  my-image rounded-3 img-fluid" src="https://i.ibb.co/N7QyFwp/DSC-0079-Copy-2.jpg" alt="" />

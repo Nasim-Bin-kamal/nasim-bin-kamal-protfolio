@@ -1,5 +1,9 @@
 .about-section {
   min-height: 100vh;
+  background: url(https://i.ibb.co/RNdbjb1/white-abstract-background-23-2148810113.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .follow {

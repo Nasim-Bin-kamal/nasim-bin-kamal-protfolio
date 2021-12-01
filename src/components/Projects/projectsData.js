@@ -24,7 +24,7 @@ const projectsdata = [
         image: [
             "https://i.ibb.co/FVHRLSf/project11-1.png",
             "https://i.ibb.co/kQXyv7q/project11-2.png",
-            "https://i.ibb.co/7zBpSdv/project11-3.png"
+            "https://i.ibb.co/kySW33m/project11-3.png"
 
         ],
         type: "Full-Stack Travel Agency Website",

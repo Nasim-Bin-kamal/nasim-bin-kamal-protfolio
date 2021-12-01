@@ -5,12 +5,14 @@ import './Contact.css';
 import AOS from 'aos';
 
 const Contact = () => {
+
     useEffect(() => {
         AOS.init({
             duration: 1000,
             easing: 'ease-in-out'
         });
     }, []);
+
     const handleSubmitMail = (e) => {
         e.preventDefault();
         emailjs.sendForm('service_hc5ueqa', 'template_iwix2r8', e.target, 'user_vxcxNKWCovuWOMND9liK6')

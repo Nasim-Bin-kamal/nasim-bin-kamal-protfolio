@@ -8,18 +8,16 @@ import AOS from 'aos';
 
 const Projects = () => {
 
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
     useEffect(() => {
         AOS.init({
-            duration: 2000
+            duration: 1000
         });
 
     }, []);
 
-    const handleProjectDetails = (id) => {
-        // navigate(`/projects/${id}`);
-    }
+
     return (
         <div className="projects-section" id="projects">
             <Container>
@@ -38,7 +36,7 @@ const Projects = () => {
                                         </Card.Body>
                                         <div className="content-details fadeIn-bottom">
                                             {/* <h5 className="content-title text-white py-3">{singleProject?.projectName}</h5> */}
-                                            <Button onClick={() => handleProjectDetails(singleProject?.id)} variant="outline-warning">View Details</Button>
+                                            <Button onClick={() => { navigate(`/projects/${singleProject?.id}`) }} variant="outline-warning">View Details</Button>
                                             <div className="mt-4">
                                                 <a href={singleProject?.liveSite} target="_blank" rel="noopener noreferrer"><Button className="m-1" variant="outline-warning" size="sm">Live Site</Button></a>
                                                 <a href={singleProject?.clientSite} target="_blank" rel="noopener noreferrer"><Button className="m-1" variant="outline-warning" size="sm">Client Site</Button></a>

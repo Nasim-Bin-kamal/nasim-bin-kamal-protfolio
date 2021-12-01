@@ -4,14 +4,18 @@ import './App.css';
 import Home from './pages/Home/Home';
 import SingleProject from './pages/SingleProject/SingleProject';
 import "aos/dist/aos.css";
+import Blogs from './pages/Blogs/Blogs';
 
 function App() {
   return (
     <div className="App">
-      <Home />
+
       <Router>
         <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/projects/:projectId" element={<SingleProject />} />
+          <Route path="/blogs" element={<Blogs />} />
         </Routes>
       </Router>
     </div>

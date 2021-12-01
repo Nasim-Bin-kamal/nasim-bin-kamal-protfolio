@@ -16,7 +16,7 @@ const Timeline = () => {
     return (
         <div className="mx-auto education-section">
             <Container>
-                <h1 className="mx-auto text-center mt-5 py-5">Education</h1>
+                <h1 className="mx-auto text-center py-5">Education</h1>
                 <VerticalTimeline>
                     {timelineElements.map((element) => {
                         return (
