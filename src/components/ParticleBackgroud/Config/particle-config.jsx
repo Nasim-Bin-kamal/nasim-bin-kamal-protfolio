@@ -20,10 +20,10 @@ const particleConfig = {
         },
         enable: false
     },
-    fullScreen: {
-        enable: true,
-        zIndex: 1
-    },
+    // fullScreen: {
+    //     enable: true,
+    //     zIndex: 1
+    // },
     detectRetina: true,
     duration: 0,
     fpsLimit: 60,
@@ -53,7 +53,7 @@ const particleConfig = {
         },
         modes: {
             attract: {
-                distance: 200,
+                distance: 400,
                 duration: 0.4,
                 easing: "ease-out-quad",
                 factor: 1,
@@ -82,7 +82,7 @@ const particleConfig = {
                 links: {
                     blink: false,
                     consent: false,
-                    opacity: 0.5
+                    opacity: 0.3
                 }
             },
             light: {
@@ -99,7 +99,7 @@ const particleConfig = {
                 },
                 shadow: {
                     color: {
-                        value: "#000000"
+                        // value: "#000000"
                     },
                     length: 2000
                 }
@@ -343,7 +343,7 @@ const particleConfig = {
                 factor: 1000
             },
             limit: 0,
-            value: 400
+            value: 200
         },
         opacity: {
             random: {

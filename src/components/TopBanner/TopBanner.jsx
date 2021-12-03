@@ -17,7 +17,7 @@ const TopBanner = () => {
     }, []);
     return (
         <div className="banner mx-auto d-flex flex-column justify-content-center align-items-center" id="home">
-            {/* <ParticleBackground /> */}
+            <ParticleBackground />
             <Container>
                 <div className="mx-auto text-white d-flex justify-content-center align-items-center flex-column all-info">
                     <h3 className="">Hello, I'm Nasim</h3>
