@@ -99,7 +99,7 @@ const projectsdata = [
             "https://i.ibb.co/74qTcQw/project7-2.png",
             "https://i.ibb.co/xmDJbsp/project7-3.png"
         ],
-        type: "Front-end E-commerce add to cart system",
+        type: "Front-end E-commerce system",
         technologies: [
             "React", "React Bootstrap"
         ],
