@@ -50,8 +50,62 @@ const projectsdata = [
             "React", "React Bootstrap", "Firebase"
         ],
         description: "",
-        liveSite: "https://medicare-app-44af8.web.app/login",
+        liveSite: "https://medicare-app-44af8.web.app",
         clientSite: "https://github.com/Nasim-Bin-kamal/medicare-clinic-website",
+        serverSite: ""
+
+    },
+    {
+        id: "3",
+        projectName: "Learning Time",
+        images: [
+            "https://i.ibb.co/yP6w99X/project9-1.png",
+            "https://i.ibb.co/3sgyVDk/project9-2.png",
+            "https://i.ibb.co/mGW2Rfc/project9-3.png"
+        ],
+        type: "Front-end Education Website",
+        technologies: [
+            "React", "React Bootstrap"
+        ],
+        description: "",
+        liveSite: "https://learning-time-edu.netlify.app/",
+        clientSite: "https://github.com/Nasim-Bin-kamal/learning-time-education-course-website",
+        serverSite: ""
+
+    },
+    {
+        id: "4",
+        projectName: "Tech Summit",
+        images: [
+            "https://i.ibb.co/g4r0nxG/project8-1.png",
+            "https://i.ibb.co/ssrvTNM/project8-2.png",
+            "https://i.ibb.co/j8Vbjy6/project8-3.png"
+        ],
+        type: "Front-end Member Hiring Website",
+        technologies: [
+            "React", "React Bootstrap"
+        ],
+        description: "",
+        liveSite: "https://world-tech-summit.netlify.app/",
+        clientSite: "https://github.com/Nasim-Bin-kamal/tech-summit-member-hiring-website",
+        serverSite: ""
+
+    },
+    {
+        id: "5",
+        projectName: "E-bazar",
+        images: [
+            "https://i.ibb.co/6rYVqP5/project7-1.png",
+            "https://i.ibb.co/74qTcQw/project7-2.png",
+            "https://i.ibb.co/xmDJbsp/project7-3.png"
+        ],
+        type: "Front-end E-commerce add to cart system",
+        technologies: [
+            "React", "React Bootstrap"
+        ],
+        description: "",
+        liveSite: "https://ebazar-bd-nbk.netlify.app/",
+        clientSite: "https://github.com/Nasim-Bin-kamal/e-bazar-e-commerce-product-cart-website",
         serverSite: ""
 
     }

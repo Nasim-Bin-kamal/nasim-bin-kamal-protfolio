@@ -78,5 +78,74 @@
       "liveSite": "https://medicare-app-44af8.web.app/login",
       "clientSite": "https://github.com/Nasim-Bin-kamal/medicare-clinic-website",
       "serverSite": ""
+   },
+   {
+      "id": "3",
+      "projectName": "Learning Time",
+      "images": [
+         "https://i.ibb.co/yP6w99X/project9-1.png",
+         "https://i.ibb.co/3sgyVDk/project9-2.png",
+         "https://i.ibb.co/mGW2Rfc/project9-3.png"
+      ],
+      "type": "Front-end Education Website",
+      "technologies": [
+         "React",
+         "React Bootstrap"
+      ],
+      "features": [
+         "Built a education based online course website",
+         "Users can see all courses in course page",
+         "By clicking the see details page user redirect to details page"
+      ],
+      "description": "",
+      "liveSite": "https://learning-time-edu.netlify.app/",
+      "clientSite": "https://github.com/Nasim-Bin-kamal/learning-time-education-course-website",
+      "serverSite": ""
+   },
+   {
+      "id": "4",
+      "projectName": "Tech Summit",
+      "images": [
+         "https://i.ibb.co/g4r0nxG/project8-1.png",
+         "https://i.ibb.co/ssrvTNM/project8-2.png",
+         "https://i.ibb.co/j8Vbjy6/project8-3.png"
+      ],
+      "type": "Front-end Member Hiring Website",
+      "technologies": [
+         "React",
+         "React Bootstrap"
+      ],
+      "features": [
+         "Built a tech summit member hiring website.",
+         "Users can see about a person with his details information and hire a person by click hire me button",
+         "After hiring the total member, spending and hired member are displayed."
+      ],
+      "description": "",
+      "liveSite": "https://world-tech-summit.netlify.app/",
+      "clientSite": "https://github.com/Nasim-Bin-kamal/tech-summit-member-hiring-website",
+      "serverSite": ""
+   },
+   {
+      "id": "5",
+      "projectName": "E-bazar",
+      "images": [
+         "https://i.ibb.co/6rYVqP5/project7-1.png",
+         "https://i.ibb.co/74qTcQw/project7-2.png",
+         "https://i.ibb.co/xmDJbsp/project7-3.png"
+      ],
+      "type": "Front-end E-commerce add to cart system",
+      "technologies": [
+         "React",
+         "React Bootstrap"
+      ],
+      "features": [
+         "Built a E-commerce add to cart system website.",
+         "Users can see all items are displayed in the system with valid information.",
+         "Users can add a product by clicking add to cart and the cart will show total products are added to it with total costing."
+      ],
+      "description": "",
+      "liveSite": "https://ebazar-bd-nbk.netlify.app/",
+      "clientSite": "https://github.com/Nasim-Bin-kamal/e-bazar-e-commerce-product-cart-website",
+      "serverSite": ""
    }
 ]

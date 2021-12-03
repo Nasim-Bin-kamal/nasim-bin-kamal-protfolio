@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Nav, Navbar, NavLink } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
 import './NavigationBar.css';
 
@@ -7,12 +7,12 @@ const NavigationBar = () => {
 
     return (
         <div>
-            <Navbar collapseOnSelect className="navbarBg p-0" variant=" dark" fixed="top" expand="lg">
+            <Navbar collapseOnSelect className="navbarBg" variant=" dark" fixed="top" expand="lg">
                 <Container>
                     <Navbar.Brand className="nav-brand me-5">
-                        <NavLink href="/home">
+                        <HashLink to="/">
                             <img src="https://i.ibb.co/dgtMkCQ/nbk2-removebg-preview.png" alt="" width="50%" />
-                        </NavLink>
+                        </HashLink>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">

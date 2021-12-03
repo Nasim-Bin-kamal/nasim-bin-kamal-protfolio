@@ -29,7 +29,7 @@ const Projects = () => {
                         {
                             projects?.map(singleProject => <Col key={singleProject?.id}>
                                 <div className="my-3 mx-auto">
-                                    <Card className="content rounded-3 bg-white" data-aos="fade-up">
+                                    <Card className="content rounded-3 bg-white shadow-sm" data-aos="fade-up">
                                         <div className="content-overlay"></div>
                                         <Card.Img className="content-image" variant="top" src={singleProject?.images[0]} widht="100%" height="200px" />
                                         <Card.Body>
