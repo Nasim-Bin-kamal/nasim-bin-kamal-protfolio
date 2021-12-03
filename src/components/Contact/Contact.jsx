@@ -3,6 +3,7 @@ import { Col, Container, Form, Row, Button } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
 import './Contact.css';
 import AOS from 'aos';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Contact = () => {
 
@@ -13,13 +14,20 @@ const Contact = () => {
         });
     }, []);
 
+    const notifyUser = () => {
+        toast.success('Message Send Successfully', {
+            duration: 1000
+        })
+    }
+
     const handleSubmitMail = (e) => {
         e.preventDefault();
         emailjs.sendForm('service_hc5ueqa', 'template_iwix2r8', e.target, 'user_vxcxNKWCovuWOMND9liK6')
             .then(res => {
-                console.log(res);
+                // console.log(res);
                 if (res.status === 200) {
                     e.target.reset();
+                    notifyUser();
                 }
             }).catch(error => {
                 console.log(error.text);
@@ -28,6 +36,7 @@ const Contact = () => {
     }
     return (
         <div className="contact-section" id="contact">
+            <ToastContainer />
             <Container>
                 <h1 className="mx-auto text-center pt-5">Contact</h1>
                 <div className="mx-auto mb-5">
@@ -51,7 +60,7 @@ const Contact = () => {
                                     <Form.Label className="input-label fw-bold">Message</Form.Label>
                                     <Form.Control as="textarea" name="message" placeholder="Write message" rows={4} required />
                                 </Form.Group>
-                                <Button className="w-100 border-0 btn-close-success contact-btn" type="submit" variant="dark">Submit</Button>
+                                <Button className="w-100 border-0 btn-close-success contact-btn" type="submit" variant="dark">Send</Button>
                             </Form>
                         </Col>
                     </Row>

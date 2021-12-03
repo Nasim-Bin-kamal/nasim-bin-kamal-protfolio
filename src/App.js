@@ -5,6 +5,7 @@ import Home from './pages/Home/Home';
 import SingleProject from './pages/SingleProject/SingleProject';
 import "aos/dist/aos.css";
 import Blogs from './pages/Blogs/Blogs';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
