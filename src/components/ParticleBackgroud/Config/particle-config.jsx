@@ -67,13 +67,13 @@ const particleConfig = {
                 distance: 400,
                 duration: 0.3,
                 mix: false,
-                opacity: 1,
-                size: 4
+                opacity: 0.1,
+                size: 2
             },
             connect: {
                 distance: 80,
                 links: {
-                    opacity: 0.5
+                    opacity: 0.1
                 },
                 radius: 60
             },
@@ -82,7 +82,7 @@ const particleConfig = {
                 links: {
                     blink: false,
                     consent: false,
-                    opacity: 0.3
+                    opacity: 0.1
                 }
             },
             light: {
@@ -444,7 +444,7 @@ const particleConfig = {
             },
             value: {
                 min: 1,
-                max: 10
+                max: 8
             },
             animation: {
                 count: 0,
