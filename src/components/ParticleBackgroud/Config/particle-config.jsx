@@ -20,10 +20,10 @@ const particleConfig = {
         },
         enable: false
     },
-    // fullScreen: {
-    //     enable: true,
-    //     zIndex: 1
-    // },
+    fullScreen: {
+        enable: true,
+        // zIndex: 1
+    },
     detectRetina: true,
     duration: 0,
     fpsLimit: 60,
