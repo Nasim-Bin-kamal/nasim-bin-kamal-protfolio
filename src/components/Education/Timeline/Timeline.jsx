@@ -30,7 +30,7 @@ const Timeline = () => {
                             >
                                 <h3 className="courses fw-bold">{element.courseTitle}</h3>
                                 <h5>{element?.institute}</h5>
-                                <p className="text-secondary">CGPA: {element?.description}</p>
+                                <p className="text-secondary">{element?.description}</p>
                             </VerticalTimelineElement>
                         );
                     })}

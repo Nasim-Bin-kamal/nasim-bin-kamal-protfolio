@@ -16,13 +16,14 @@ const Contact = () => {
 
     const notifyUser = () => {
         toast.success('Message Send Successfully', {
-            duration: 1000
+            autoClose: 1000,
+            position: "bottom-left"
         })
     }
 
     const handleSubmitMail = (e) => {
         e.preventDefault();
-        emailjs.sendForm('service_hc5ueqa', 'template_iwix2r8', e.target, 'user_vxcxNKWCovuWOMND9liK6')
+        emailjs.sendForm('service_kw8chgw', 'template_08f6lpv', e.target, 'user_vxcxNKWCovuWOMND9liK6')
             .then(res => {
                 // console.log(res);
                 if (res.status === 200) {
@@ -30,7 +31,8 @@ const Contact = () => {
                     notifyUser();
                 }
             }).catch(error => {
-                console.log(error.text);
+                //console.log(error.text);
+                toast.error(error.text);
             });
 
     }
