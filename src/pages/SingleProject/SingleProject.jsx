@@ -15,9 +15,9 @@ const SingleProject = () => {
     const { projectName, images, type, technologies, features, liveSite, clientSite, serverSite } = singleProject || {};
 
     return (
-        <div>
+        <div className='bg-secondary bg-opacity-25'>
             <NavigationBar />
-            <Container variant="dark">
+            <Container>
 
                 <h1 className="mx-auto py-5 text-center fw-bold mt-4">Project Details</h1>
                 <Row xs={1} md={1} lg={2} >
@@ -64,6 +64,7 @@ const SingleProject = () => {
                 </Row>
 
             </Container>
+
         </div>
     );
 };

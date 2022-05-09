@@ -21,8 +21,8 @@
   color: #f54e30;
 }
 .desc {
-  color: rgb(234, 235, 236);
-  font-weight: 600;
+  color: rgb(224, 225, 226);
+  font-weight: 500;
 }
 
 @media screen and (min-width: 768px) {

@@ -27,17 +27,17 @@ const Projects = () => {
                     <h1 className="mx-auto text-center mb-5">Projects</h1>
                     <Row xs={1} md={2} lg={3}>
                         {
-                            projects?.map(singleProject => <Col key={singleProject?.id}>
+                            projects?.map((singleProject, p_id) => <Col key={p_id}>
                                 <div className="my-3 mx-auto">
                                     <Card className="content rounded-3 bg-white shadow-sm" data-aos="fade-up">
                                         <div className="content-overlay"></div>
                                         <Card.Img className="content-image" variant="top" src={singleProject?.images[0]} widht="100%" height="200px" />
-                                        <Card.Body>
+                                        <Card.Body className="bg-light">
                                             <Card.Title className="fs-3 fw-bold project-name">{singleProject?.projectName}</Card.Title>
                                             <h5 className="py-1 text-secondary">{singleProject?.type}</h5>
                                         </Card.Body>
                                         <div className="content-details fadeIn-bottom">
-                                            {/* <h5 className="content-title text-white py-3">{singleProject?.projectName}</h5> */}
+
                                             <Button onClick={() => { navigate(`/projects/${singleProject?.id}`) }} variant="outline-warning">View Details</Button>
                                             <div className="mt-4">
                                                 <a href={singleProject?.liveSite} target="_blank" rel="noopener noreferrer"><Button className="m-1" variant="outline-warning" size="sm">Live Site</Button></a>
