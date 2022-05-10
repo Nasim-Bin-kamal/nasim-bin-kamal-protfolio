@@ -29,7 +29,7 @@ const TopBanner = () => {
                         />
                     </span></h1>
                     <h5 className="desc mx-auto">I'm interested in developing projects with JavaScript, Node.js, and React.js technology. I am devoted to building easy-to-use, user-friendly websites, and applications.</h5>
-                    <a href="https://drive.google.com/file/d/1r8c55kC_S73Lf8lQlCpXuFL94IjHH-pF/view?usp=sharing" target="_blank" rel="noreferrer">
+                    <a href="https://drive.google.com/file/d/18b48Yaxee62bOuq9QRjt5ykfWm8LqvNT/view?usp=sharing" target="_blank" rel="noreferrer">
                         <Button className="rounded-pill px-4 border-2 mt-3" variant="outline-light" size="lg" data-aos="flip-up">
                             Resume <HiDownload />
                         </Button>

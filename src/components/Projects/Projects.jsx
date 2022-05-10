@@ -27,7 +27,7 @@ const Projects = () => {
                     <h1 className="mx-auto text-center mb-5">Projects</h1>
                     <Row xs={1} md={2} lg={3}>
                         {
-                            projects?.map((singleProject, p_id) => <Col key={p_id}>
+                            projects?.map((singleProject) => <Col key={singleProject?.id}>
                                 <div className="my-3 mx-auto">
                                     <Card className="content rounded-3 bg-white shadow-sm" data-aos="fade-up">
                                         <div className="content-overlay"></div>

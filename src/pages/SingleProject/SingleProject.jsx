@@ -8,14 +8,15 @@ import { FaLink, FaGithub } from "react-icons/fa";
 
 const SingleProject = () => {
     const { projectId } = useParams();
+    console.log(projectId)
     const [projects] = useProjects();
-
+    console.log(projects);
     const singleProject = projects?.find(project => project.id === projectId) || {};
     console.log(singleProject);
     const { projectName, images, type, technologies, features, liveSite, clientSite, serverSite } = singleProject || {};
 
     return (
-        <div className='bg-secondary bg-opacity-25'>
+        <div className='singleSection'>
             <NavigationBar />
             <Container>
 
