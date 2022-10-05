@@ -21,12 +21,12 @@ const projectsdata = [
     },
     {
 
-        projectName: "Travel Time",
+        projectName: "Travel Us",
         images: [
-            "https://i.ibb.co/Xtvgpr6/travel-time-mockup.png",
-            "https://i.ibb.co/FVHRLSf/project11-1.png",
-            "https://i.ibb.co/kQXyv7q/project11-2.png",
-            "https://i.ibb.co/kySW33m/project11-3.png"
+            "https://i.ibb.co/wCx0pD1/travel-us.png",
+            "https://i.ibb.co/Kj4hxPK/travel-us-1.png",
+            "https://i.ibb.co/nsLCVVC/travel-us-2.png",
+            "https://i.ibb.co/ynq9Zd1/travel-us-3.png"
 
         ],
         type: "Full-Stack Travel Agency Website",
@@ -34,9 +34,9 @@ const projectsdata = [
             "React", "React Bootstrap", "Node JS", "Express JS", "MongoDB", "Firebase", "Heroku"
         ],
         description: "",
-        liveSite: "https://travel-time-application.web.app/",
-        clientSite: "https://github.com/Nasim-Bin-kamal/travel-time-website-client-site",
-        serverSite: "https://github.com/Nasim-Bin-kamal/travel-time-website-server-site"
+        liveSite: "https://travel-us-30ded.web.app/home",
+        clientSite: "https://github.com/Nasim-Bin-kamal/Travel-us",
+        serverSite: "https://github.com/Nasim-Bin-kamal/travel-us-server"
 
     },
     {
